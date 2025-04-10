@@ -13,8 +13,10 @@
 	<link rel="stylesheet" href="./styles/basicstructure.css">
 	<link rel="stylesheet" href="./styles/about.css">
 	<link rel="stylesheet" href="./styles/experience.css">
+	<link rel="stylesheet" href="./styles/activity.css">
     <script src="./typing.js"></script>
     <script src="./navbar.js"></script>
+	<script src="./activity.js"></script>
 </head>
 <body>
 	<nav class="navbar hidden">
@@ -30,109 +32,165 @@
         </div>
     </nav>
 
-    <div class="full-screen-div welcome-container" id="welcome">
-        <div class="codeArea">
-            <div class="typing" id="typing"></div>
-        </div>
+    <div class="full-screen-div" id="welcome">
+        <div class="welcome-container">
+			<div class="codeArea">
+				<div class="typing" id="typing"></div>
+			</div>
+		</div>
     </div>
     
-    <div class="full-screen-div landing-container" id="home">
-        <div class="comparison-image">
-            <img src="./sanyam.png" alt="Sanyam Gandhi">
-        </div>
-        <h1 class="column name">Hi! <br> I'm Sanyam Gandhi</h1>
-        <div class="comparison-image">
-            <img src="./seac.png" alt="Sanyam Gandhi">
-        </div>
+    <div class="full-screen-div" id="home">
+        <div class="landing-container">
+			<div class="comparison-image">
+				<img src="./sanyam.png" alt="Sanyam Gandhi">
+			</div>
+			<h1 class="column name">Hi! <br> I'm Sanyam Gandhi</h1>
+			<div class="comparison-image">
+				<img src="./seac.png" alt="Sanyam Gandhi">
+			</div>
+		</div>
     </div>
 
-    <div class="full-screen-div about-container" id="about">
-		<div class="text">
-			<h2>About</h2> <br>
-			<p>Welcome to my digital space! I'm Sanyam, a 
-				passionate individual with a keen eye for 
-				innovation and creativity. Whether it's 
-				exploring new ideas, diving deep into 
-				complex challenges, or crafting meaningful 
-				solutions, I thrive on turning possibilities 
-				into realities. This website is a reflection 
-				of my journey, interests, and aspirations. 
-				Feel free to explore, connect, and join me 
-				in shaping an exciting future!</p>
-			<h4>Basics about me:</h4>
-			<ul class="about-list">
-				<li>Age: 18</li>
-				<li>Birthplace: <a href="">Tosham, Haryana</a></li>
-				<li>Interests: AI, ML, Data Science</li>
-				<li>Hobbies: Reading, Coding, Gaming</li>
-			</ul>
-        </div>
+    <div class="full-screen-div">
+		<div class="about-container" id="about">
+			<div class="text">
+				<h2>About</h2> <br>
+				<p>Welcome to my digital space! I'm Sanyam, a 
+					passionate individual with a keen eye for 
+					innovation and creativity. Whether it's 
+					exploring new ideas, diving deep into 
+					complex challenges, or crafting meaningful 
+					solutions, I thrive on turning possibilities 
+					into realities. This website is a reflection 
+					of my journey, interests, and aspirations. 
+					Feel free to explore, connect, and join me 
+					in shaping an exciting future!</p>
+				<h4>Basics about me:</h4>
+				<ul class="about-list">
+					<li>Age: 18</li>
+					<li>Birthplace: <a href="">Tosham, Haryana</a></li>
+					<li>Interests: AI, ML, Data Science</li>
+					<li>Hobbies: Reading, Coding, Gaming</li>
+				</ul>
+			</div>
 
-        <div class="images">
-            <img src="./seac.png" alt="Sanyam Gandhi">
-			<img src="./sanyam.png" alt="Sanyam Gandhi">
-			<h5>Some photos from my birthplace</h5>
-        </div>
-    </div>
+			<div class="images">
+				<img src="./seac.png" alt="Sanyam Gandhi">
+				<img src="./sanyam.png" alt="Sanyam Gandhi">
+				<h5>Some photos from my birthplace</h5>
+			</div>
+		</div>
+	</div>
 
 	<div class="full-screen-div" id="education">
-        <h2>Education</h2>
-        <p>Your content here</p>
-    </div>
-
-    <div class="experience-container" id="experience">
-		<div class="experience-text">
-			<h2>Experience</h2>
+		<div class="experience-container">
+			<div class="experience-text">
+				<h2>Education</h2>
+			</div>
+			<div class="timeline-section">
+				<div class="timeline-container">
+					<div class="timeline">
+						<div class="timeline-item first">
+							<div class="timeline-dot"></div>
+							<div class="timeline-connector"></div>
+							<div class="timeline-content">
+								<h3>Till 2024</h3>
+								<p> Senior Secondary Education <br><br><br> <a href=""> P.S. Navyug Senior Secondary School </a> <br><br> Tosham <br></p>
+							</div>
+						</div>
+						<div class="timeline-item">
+							<div class="timeline-dot"></div>
+							<div class="timeline-connector"></div>
+							<div class="timeline-content">
+								<h3>2024 to 2029</h3>
+								<p>Bachelor's in Computer Science and Engineering <br><br> <a href=""> International Institute of Information Technology </a> <br><br> Hyderabad </p>
+							</div>
+						</div>
+						<div class="timeline-item">
+							<div class="timeline-dot"></div>
+							<div class="timeline-connector"></div>
+							<div class="timeline-content">
+								<h3>2024 to 2029</h3>
+								<p>Masters in Computational Natural Sciences <br><br> <a href=""> International Institute of Information Technology </a><br><br> Hyderabad </p>
+							</div>
+						</div>
+						<div class="timeline-item last">
+							<div class="timeline-dot"></div>
+							<div class="timeline-connector"></div>
+							<div class="timeline-content">
+								<h3>2029 onwards</h3>
+								<p><br><br><br><centre>Let's see</centre><br><br><br><br></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="timeline-section">
-			<div class="timeline-container">
-				<div class="timeline">
-					<div class="timeline-item first">
-						<div class="timeline-dot"></div>
-						<div class="timeline-connector"></div>
-						<div class="timeline-content">
-							<h3>2018</h3>
-							<p>Started my journey as a developer</p>
+	</div>
+
+	<div class="full-screen-div" id="experience">
+		<div class="experience-container">
+			<div class="experience-text">
+				<h2>Experience</h2>
+			</div>
+			<div class="timeline-section">
+				<div class="timeline-container">
+					<div class="timeline">
+						<div class="timeline-item first">
+							<div class="timeline-dot"></div>
+							<div class="timeline-connector"></div>
+							<div class="timeline-content">
+								<h3>Jan 2019 - Present</h3>
+								<p>Chief Executive Officer <br> <br>
+									<a href=""> SEAC (Sanyam Editors And Creators)</a> <br> <br>
+									Still ideating and working on it <br><br>
+								</p>
+							</div>
 						</div>
-					</div>
-					<div class="timeline-item">
-						<div class="timeline-dot"></div>
-						<div class="timeline-connector"></div>
-						<div class="timeline-content">
-							<h3>2020</h3>
-							<p>Built my first major project</p>
+						<div class="timeline-item">
+							<div class="timeline-dot"></div>
+							<div class="timeline-connector"></div>
+							<div class="timeline-content">
+								<h3>Jan 2025 - Present</h3>
+								<p>Secretary<br> <br>
+									<a href="">Stall Comm, Students Parliament, IIIT-H</a> <br> <br>
+									Helping make Canteens better at IIIT<br><br>
+								</p>
+							</div>
 						</div>
-					</div>
-					<div class="timeline-item">
-						<div class="timeline-dot"></div>
-						<div class="timeline-connector"></div>
-						<div class="timeline-content">
-							<h3>2020</h3>
-							<p>Built my first major project</p>
+						<div class="timeline-item">
+							<div class="timeline-dot"></div>
+							<div class="timeline-connector"></div>
+							<div class="timeline-content">
+								<h3>Sep 2024 - Present</h3>
+								<p>Tech Team<br> <br>
+									<a href=""> Students Parliament, IIIT-H</a> <br> <br>
+									Managing the Student Parliament's website for students to interact with the Parliament
+								</p>
+							</div>
 						</div>
-					</div>
-					<div class="timeline-item">
-						<div class="timeline-dot"></div>
-						<div class="timeline-connector"></div>
-						<div class="timeline-content">
-							<h3>2020</h3>
-							<p>Built my first major project</p>
+						<div class="timeline-item">
+							<div class="timeline-dot"></div>
+							<div class="timeline-connector"></div>
+							<div class="timeline-content">
+								<h3>Nov 2024 - Present</h3>
+								<p>Outreach and Events Team<br> <br>
+									<a href=""> Astronautics Club, IIIT-H</a> <br> <br>
+									Organising events and outreach programs for the club<br><br>
+								</p>
+							</div>
 						</div>
-					</div>
-					<div class="timeline-item">
-						<div class="timeline-dot"></div>
-						<div class="timeline-connector"></div>
-						<div class="timeline-content">
-							<h3>2020</h3>
-							<p>Built my first major project</p>
-						</div>
-					</div>
-					<div class="timeline-item last">
-						<div class="timeline-dot"></div>
-						<div class="timeline-connector"></div>
-						<div class="timeline-content">
-							<h3>2020</h3>
-							<p>Built my first major project</p>
+						<div class="timeline-item">
+							<div class="timeline-dot"></div>
+							<div class="timeline-connector"></div>
+							<div class="timeline-content">
+								<h3>Jan 2025 - Present</h3>
+								<p>Co-coordinator<br> <br>
+									<a href="">IIIT Society of Applied Quantum Computing</a> <br> <br>
+									Exploring the Quantum world!<br><br>
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -141,8 +199,11 @@
 	</div>
     
     <div class="full-screen-div" id="contact">
-        <h2>Contact</h2>
-        <p>Your contact information here</p>
+		<div class="activity-container">
+			<h2>Activity</h2>
+			<input type="text" class="text-box" id="activity-input" placeholder="Enter your activity...">
+			<text id="activity-output"></div>
+		</div>
     </div>
 </body>
 </html>
