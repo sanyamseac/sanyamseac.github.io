@@ -1,0 +1,19 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --accent-color: #2a0505;
+    --background: linear-gradient(to right, #1b3d3d, #234242);
+    --text-color: #cccccc;
+    --codeArea-background: #1b3d3d;
+    --hyperlink-color: #3498db;
+}
+/* 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: #3498db;
+        --secondary-color: #2ecc71;
+        --accent-color: #e74c3c;
+        --background-color: #fdf7f3;
+        --text-color: #52a838;
+    }
+}

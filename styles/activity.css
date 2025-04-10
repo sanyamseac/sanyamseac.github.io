@@ -1,0 +1,33 @@
+.activity-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    margin-bottom: 100px;
+}
+
+/* Basic text-box styling */
+.text-box {
+    width: 300px;
+    padding: 10px 15px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.text-box:focus {
+    outline: none;
+    border-color: #4d90fe;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(77, 144, 254, 0.6);
+}
+
+.text-box::placeholder {
+    color: #999;
+    opacity: 1;
+}

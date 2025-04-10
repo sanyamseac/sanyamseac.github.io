@@ -1,0 +1,35 @@
+.name {
+    color: var(--text-color);
+    font-size: 70px;
+    font-family: Consolas, Monaco, 'Courier New', monospace;
+}
+
+.landing-container {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+@media screen and (max-width: 600px) {
+    .landing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.column {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+}
+
+.landing-container h1 {
+    font-size: 3rem;
+    color: var(--text-color);
+    text-align: center;
+    padding: 60px
+}
