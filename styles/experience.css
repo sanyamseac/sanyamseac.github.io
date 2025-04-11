@@ -52,10 +52,29 @@
 
 .timeline-item {
     position: relative;
-    width: 280px;
+    width: 480px;
+    height: 500px;
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 0.6s ease forwards;
+}
+
+@media screen and (max-width: 1200px) {
+    .timeline-item {
+        width: 420px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .timeline-item {
+        width: 380px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .timeline-item {
+        width: 320px;
+    }
 }
 
 .first {
@@ -102,6 +121,7 @@
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    height: 240px;
 }
 
 .timeline-content h3 {

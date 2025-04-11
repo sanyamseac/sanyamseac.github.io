@@ -25,7 +25,7 @@
     padding: 10px;
 }
 
-.text a {
+a {
     color: var(--hyperlink-color);
     text-decoration: none;
     font-weight: bold;
