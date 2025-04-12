@@ -1,19 +1,9 @@
-.navbar-at-bottom {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--background-color);
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-}
-
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--background-color);
+    background-color: var(--codeArea-background);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     transition: transform 0.3s ease;
@@ -87,14 +77,13 @@
     transform: scaleX(1);
 }
 
-/* Hamburger Menu Styles */
 .hamburger {
     display: none;
     cursor: pointer;
     background: none;
     border: none;
     padding: 0;
-    z-index: 2000; /* Higher z-index to appear above overlay */
+    z-index: 2000;
 }
 
 .hamburger-bar {
@@ -107,7 +96,6 @@
     border-radius: 2px;
 }
 
-/* Fullscreen Menu Overlay */
 .menu-overlay {
     display: none;
     position: fixed;
@@ -125,7 +113,6 @@
     opacity: 1;
 }
 
-/* Media Query for Mobile Devices */
 @media (max-width: 1024px) {
     .hamburger {
         display: block;
@@ -133,22 +120,22 @@
 
     .nav-menu {
         position: fixed;
-        right: -75%; /* Start off-screen to the right */
+        right: -75%;
         top: 0;
         flex-direction: column;
         background: var(--background);
-        width: 75%; /* Cover 75% of the screen */
+        width: 75%;
         height: 100vh;
         text-align: center;
         transition: right 0.4s ease;
         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
         padding: 50vw 0 20px;
         justify-content: flex-start;
-        z-index: 1800; /* Between hamburger and overlay */
+        z-index: 1800;
     }
 
     .nav-menu.active {
-        right: 0; /* Slide in from right */
+        right: 0;
     }
 
     .nav-item {
@@ -159,7 +146,6 @@
         font-size: 1.5rem;
     }
 
-    /* Hamburger Animation */
     .hamburger.active .hamburger-bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }

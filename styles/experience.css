@@ -6,6 +6,14 @@
     position: relative;
 }
 
+.notify {
+    color: var(--secondary-color);
+    text-align: left;
+    position: relative;
+    font-size: 16px;
+    margin: 0 30px 0 0;
+}
+
 .experience-text {
     color: var(--text-color);
     font-size: 20px;
@@ -14,7 +22,7 @@
 }
 
 .timeline-section {
-    padding: 60px 0px;
+    padding: 60px 0px 0px 0px;
     background: var(--background);
 }
 
