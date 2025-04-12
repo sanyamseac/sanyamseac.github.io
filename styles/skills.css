@@ -1,0 +1,133 @@
+.skills-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding: 60px 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 40px;
+}
+
+.skill-category {
+    background: var(--codeArea-background);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.skill-category h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: left; 
+}
+
+.skill-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.skill-name {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.skill-bar {
+    height: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 5px;
+    transition: width 1s ease;
+}
+
+@keyframes fillSkill {
+    from { width: 0; }
+}
+
+.skill-level {
+    animation: fillSkill 1.5s ease forwards;
+}
+
+@media screen and (max-width: 1200px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    
+}
+
+@media (max-width: 992px) {
+    .skills-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        padding: 60px 20px;
+    }
+    
+    .skills-container h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+    .skill-category {
+        padding: 20px;
+    }
+    
+    .skill-category h3 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .skills-container {
+        padding: 40px 15px;
+    }
+    
+    .skills-container h2 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+    
+    .skill-category {
+        padding: 15px;
+    }
+    
+    .skill-bars {
+        gap: 10px;
+    }
+}

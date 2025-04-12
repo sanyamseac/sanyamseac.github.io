@@ -5,16 +5,15 @@ document.addEventListener('click', function(event) {
 });
 
 document.addEventListener('visibilitychange', function() {
-    console.log(Date.now().toLocaleString(), 'Page viewed', "Page Viewed");
+    const date = new Date(Date.now());
+    const formattedDate = date.toLocaleString();
+    console.log("Timestamp:", formattedDate, 'Page viewed');
 });
 
 document.addEventListener('DOMContentLoaded', function () {
     const activity = document.querySelector('#activity-input');
     const activity_output = document.querySelector('#activity-output');
     activity.addEventListener('input', function() {
-        activity_output.textContent = activity.value;
-        
-        // Calculate basic text statistics
         const text = activity.value;
         const letterCount = (text.match(/[a-zA-Z]/g) || []).length;
         const wordCount = text.trim().split(/\s+/).filter(word => word.length > 0).length;
@@ -141,11 +140,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         
         // Add all sections to the page
-        const resultsContainer = document.querySelector('#results-container') || document.createElement('div');
-        if (!document.querySelector('#results-container')) {
-            resultsContainer.id = 'results-container';
-            activity_output.parentNode.insertBefore(resultsContainer, activity_output.nextSibling);
-        }
+        const resultsContainer = document.querySelector('#activity-output')
         
         // Clear previous results
         resultsContainer.innerHTML = '';

@@ -14,23 +14,35 @@
 	<link rel="stylesheet" href="./styles/about.css">
 	<link rel="stylesheet" href="./styles/experience.css">
 	<link rel="stylesheet" href="./styles/activity.css">
-    <script src="./typing.js"></script>
-    <script src="./navbar.js"></script>
-	<script src="./activity.js"></script>
+	<link rel="stylesheet" href="./styles/skills.css">
+    <script src="./scripts/typing.js"></script>
+    <script src="./scripts/navbar.js"></script>
+	<script src="./scripts/activity.js"></script>
 </head>
 <body>
-	<nav class="navbar hidden">
-        <div class="navbar-container">
-            <div class="logo">SG</div>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+	<!-- Menu Overlay -->
+<div class="menu-overlay"></div>
+
+<nav class="navbar hidden">
+    <div class="navbar-container">
+        <div class="logo">sanyamseac</div>
+        <button class="hamburger">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+        </button>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+            <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+			<li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+			<li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Resume</a></li>
+			<li class="nav-item"><a href="#activity" class="nav-link">Activity</a></li>
+        </ul>
+    </div>
+</nav>
 
     <div class="full-screen-div" id="welcome">
         <div class="welcome-container">
@@ -43,11 +55,11 @@
     <div class="full-screen-div" id="home">
         <div class="landing-container">
 			<div class="comparison-image">
-				<img src="./sanyam.png" alt="Sanyam Gandhi">
+				<img src="./static/sanyam.png" alt="Sanyam Gandhi">
 			</div>
 			<h1 class="column name">Hi! <br> I'm Sanyam Gandhi</h1>
 			<div class="comparison-image">
-				<img src="./seac.png" alt="Sanyam Gandhi">
+				<img src="./static/seac.png" alt="SEAC">
 			</div>
 		</div>
     </div>
@@ -70,14 +82,16 @@
 				<ul class="about-list">
 					<li>Age: 18</li>
 					<li>Birthplace: <a href="">Tosham, Haryana</a></li>
-					<li>Interests: AI, ML, Data Science</li>
-					<li>Hobbies: Reading, Coding, Gaming</li>
+					<li>Interests: Quantum Science, Artificial Intelligence</li>
+					<li>Hobbies: Finding Mistakes</li>
 				</ul>
 			</div>
 
 			<div class="images">
-				<img src="./seac.png" alt="Sanyam Gandhi">
-				<img src="./sanyam.png" alt="Sanyam Gandhi">
+				<img src="./static/tosham-hills.webp" alt="Tosham Hills">
+				<h5>Credits: <a href="https://www.google.com/maps/contrib/108857842872496883188">Rohit Choudhary</a></h5>
+				<img src="./static/tosham-wide.png" alt="Tosham Wide">
+				<h5>Credits: <a href="https://www.google.com/maps/contrib/108884695977447469912">Ajay Singh</a></h5>
 				<h5>Some photos from my birthplace</h5>
 			</div>
 		</div>
@@ -86,7 +100,7 @@
 	<div class="full-screen-div" id="education">
 		<div class="experience-container">
 			<div class="experience-text">
-				<h2>Education</h2>
+				<h2>Education & Achievements</h2>
 			</div>
 			<div class="timeline-section">
 				<div class="timeline-container">
@@ -197,11 +211,136 @@
 			</div>
 		</div>
 	</div>
-    
+	<div class="full-screen-div" id="skills">
+    <div class="skills-container">
+        <div class="experience-text">
+			<h2>Skills</h2>
+		</div>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Programming</h3>
+                <div class="skill-bars">
+                    <div class="skill-item">
+                        <div class="skill-name">Python</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">JavaScript</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">C++</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Java</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Web Development</h3>
+                <div class="skill-bars">
+                    <div class="skill-item">
+                        <div class="skill-name">HTML/CSS</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">React</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Node.js</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">MongoDB</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Quantum Computing</h3>
+                <div class="skill-bars">
+                    <div class="skill-item">
+                        <div class="skill-name">Qiskit</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Quantum Algorithms</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Quantum Machine Learning</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Artificial Intelligence</h3>
+                <div class="skill-bars">
+                    <div class="skill-item">
+                        <div class="skill-name">Machine Learning</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Deep Learning</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Natural Language Processing</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Computer Vision</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     <div class="full-screen-div" id="contact">
 		<div class="activity-container">
+		</div>
+    </div>
+    <div class="full-screen-div" id="activity">
+		<div class="activity-container">
 			<h2>Activity</h2>
-			<textarea class="text-box" id="activity-input" placeholder="Enter your activity..." rows="4"></textarea>
+			<textarea class="text-box" id="activity-input" placeholder="Enter the text..." rows="4"></textarea>
 			<text id="activity-output"></div>
 		</div>
     </div>
