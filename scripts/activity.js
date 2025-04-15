@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
         // Count indefinite articles
         const indefiniteArticles = {
-            'a': 0, 'an': 0, 'some': 0, 'any': 0
+            'a': 0, 'an': 0
         };
         
         // Process each word

@@ -113,6 +113,15 @@
     opacity: 1;
 }
 
+@media (min-width: 1024px) {
+    .nav-item {
+        margin-top: 20px;
+    }
+    .links {
+        margin-top: 15px;
+    }
+}
+
 @media (max-width: 1024px) {
     .hamburger {
         display: block;
